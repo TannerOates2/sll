@@ -1,12 +1,21 @@
 """Classes that implement a linked list and its nodes. A function is also provided to convert a Python list to a linked list."""
 class Node:
-    """
-    Linked List Node.
-    
+    """Linked List Node.
+
     Creates a Node.
-    
-    :param val: The value of the node.
-    
+
+    Parameters
+    ----------
+    val : int/str
+        The value of the node.
+
+    Attributes
+    ----------
+    val : str
+        The value of the node.
+    next : Node
+        The next sequential node.
+
     """
     def __init__(self, val):
         self.val = val
@@ -14,10 +23,16 @@ class Node:
 
 
 class LinkedList:
-    """
-    Singly Linked List.
-    
-    Creates a linked list of nodes.
+    """ Singly Linked List.
+
+    Creates a Singly Linked List.
+
+    Attributes
+    ----------
+    head : Node
+        The first node in the list.
+    size : Node
+        The numerical size of the list.
 
     """
 
@@ -26,11 +41,18 @@ class LinkedList:
         self.size = 0
 
     def getVal(self, index):
-        """
-        Gets the value at an index.
-        
-        :param index: int, the index of the value to get.
-        
+        """Gets the value at an index.
+
+        Parameters
+        ----------
+        index
+            The index of the value to get.
+
+        Returns
+        -------
+        int/str
+            Returns the value of the node.
+
         """
         if index < 0 or index >= self.size:
             return -1
@@ -43,11 +65,13 @@ class LinkedList:
             return curr.val
 
     def addToHead(self, val):
-        """
-        Add a value at the head.
-        
-        :param val: The value to add at the head.
-        
+        """Add a value at the head.
+
+        Parameters
+        ----------
+        val
+            The value to add at the head.
+
         """
         node = Node(val)
         node.next = self.head
@@ -55,11 +79,13 @@ class LinkedList:
         self.size += 1
 
     def addToTail(self, val):
-        """
-        Add a value to the tail.
-        
-        :param val: The value to add at the tail.
-        
+        """Add a value to the tail.
+
+        Parameters
+        ----------
+        val
+            The value to add at the tail.
+
         """
         curr = self.head
         if curr is None:
@@ -71,12 +97,15 @@ class LinkedList:
         self.size += 1
 
     def addAtIndex(self, index, val):
-        """
-        Add a value at a specific index.
-        
-        :param index: int, the index where to add value.
-        :param val: The value to add to the list.
-        
+        """Add a value at a specific index.
+
+        Parameters
+        ----------
+        index
+            The index where to add value.
+        val
+            The value to add to the list.
+
         """
         if index < 0 or index > self.size:
             return -1
@@ -94,11 +123,13 @@ class LinkedList:
         self.size += 1
 
     def deleteIndex(self, index):
-        """
-        Delete a value at a specific index.
-        
-        :param index: int, the index of the value to delete.
-        
+        """Delete a value at a specific index.
+
+        Parameters
+        ----------
+        index
+            The index of the value to delete.
+
         """
         if index < 0 or index >= self.size:
             return -1
@@ -112,10 +143,7 @@ class LinkedList:
         self.size -= 1
         
     def printList(self):
-        """
-        Print all the elements in the linked list.
-    
-        """
+        """ Print all the elements in the linked list."""
         curr = self.head
         while curr is not None:
             print(curr.val, end=" ")
@@ -125,9 +153,18 @@ class LinkedList:
 
 
 def convert_to_linked_list(arr):
-    """
-    Converts a Python list to a linked list.
-    :param arr: array, Python list.
+    """Converts a Python list to a linked list.
+
+    Parameters
+    ----------
+    arr : array
+        Python list.
+
+    Returns
+    -------
+    LinkedList
+        Returns a Singly Linkedlist.
+
     """
     linked_list = LinkedList()
     for i in range(len(arr)):
