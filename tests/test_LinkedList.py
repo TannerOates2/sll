@@ -1,17 +1,17 @@
 """pytest unit tests for the LinkedList module"""
-import sll
-from sll import convert_to_linked_list
+import sll385
+from sll385 import convert_to_linked_list
 
 def testNode():
     """test the Node class"""
-    node = sll.Node(1)
+    node = sll385.Node(1)
     assert node.val == 1
     assert node.next == None
 
 def testConversion():
     """test the conversion from list to LinkedList"""
     lst = [1, 2, 3, 4, 5]
-    ll = sll.convert_to_linked_list(lst)
+    ll = sll385.convert_to_linked_list(lst)
     assert ll.size == len(lst)
     assert ll.head.val == 1
     assert ll.head.next.val == 2
@@ -23,7 +23,7 @@ def testConversion():
 def testGetVal():
     """test the getVal method"""
     lst = [1, 2, 3, 4, 5]
-    ll = sll.convert_to_linked_list(lst)
+    ll = sll385.convert_to_linked_list(lst)
     assert ll.getVal(0) == 1
     assert ll.getVal(1) == 2
     assert ll.getVal(2) == 3
@@ -35,7 +35,7 @@ def testGetVal():
 def testAddToHead():
     """test the addToHead method"""
     lst = [1, 2, 3, 4, 5]
-    ll = sll.convert_to_linked_list(lst)
+    ll = sll385.convert_to_linked_list(lst)
     ll.addToHead(0)
     assert ll.size == 6
     assert ll.head.val == 0
@@ -49,7 +49,7 @@ def testAddToHead():
 def testAddToTail():
     """test the addToTail method"""
     lst = [1, 2, 3, 4, 5]
-    ll = sll.convert_to_linked_list(lst)
+    ll = sll385.convert_to_linked_list(lst)
     ll.addToTail(6)
     assert ll.size == 6
     assert ll.head.val == 1
@@ -63,7 +63,7 @@ def testAddToTail():
 def testAddAtIndex():
     """test the addAtIndex method"""
     lst = [1, 2, 3, 4, 5]
-    ll = sll.convert_to_linked_list(lst)
+    ll = sll385.convert_to_linked_list(lst)
     ll.addAtIndex(0, 0)
     assert ll.size == 6
     assert ll.head.val == 0
@@ -98,7 +98,7 @@ def testAddAtIndex():
 def testDeleteIndex():
     """test the deleteAtIndex method"""
     lst = [1, 2, 3, 4, 5]
-    ll = sll.convert_to_linked_list(lst)
+    ll = sll385.convert_to_linked_list(lst)
     ll.deleteIndex(0)
     assert ll.size == 4
     assert ll.head.val == 2
@@ -131,7 +131,7 @@ def testDeleteIndex():
 def testPrintList():
     """test the print method"""
     lst = [1, 2, 3, 4, 5]
-    ll = sll.convert_to_linked_list(lst)
+    ll = sll385.convert_to_linked_list(lst)
     assert ll.printList() == None
     
     

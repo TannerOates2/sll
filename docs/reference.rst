@@ -1,5 +1,5 @@
 ``sll`` API reference
 =================================
 
-.. automodule:: sll
+.. automodule:: sll385
    :members:
