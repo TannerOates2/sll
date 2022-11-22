@@ -1,5 +1,5 @@
-``sll`` API reference
+``sll385`` API reference
 =================================
 
-.. automodule:: sll385
+.. automodule:: sll385.LinkedList
    :members:

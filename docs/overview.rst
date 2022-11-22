@@ -9,7 +9,6 @@ Example usage:
 .. code:: python
 
     import sll385
-    from sll385 import convert_to_linked_list
     mylist = [1, 2, 3, 4, 5]
     mylinkedlist = sll385.convert_to_linked_list(mylist)
     mylinkedlist.printList()

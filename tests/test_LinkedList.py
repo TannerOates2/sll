@@ -1,6 +1,5 @@
 """pytest unit tests for the LinkedList module"""
 import sll385
-from sll385 import convert_to_linked_list
 
 def testNode():
     """test the Node class"""
