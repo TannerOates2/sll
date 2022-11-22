@@ -81,7 +81,9 @@ class LinkedList:
         if index < 0 or index > self.size:
             return -1
         if index == 0:
-            self.addAtHead(val)
+            node = Node(val)
+            node.next = self.head
+            self.head = node
         else:
             curr = self.head
             for i in range(index-1):
