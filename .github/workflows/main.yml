@@ -21,7 +21,7 @@ jobs:
     - name: Python Poetry Action
       uses: abatilo/actions-poetry@v2.1.6
     - name: install
-      run: poetry install --all-extras
+      run: poetry install --extras docs
     - name: Build documentation
       run: |
         mkdir gh-pages
@@ -36,3 +36,6 @@ jobs:
       with:
         branch: gh-pages
         folder: gh-pages
+
+        #q: update poetry extra dependencies command
+        #a: poetry install --extras docs
