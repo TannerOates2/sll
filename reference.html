@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>sll385 API reference &#8212; sll385 0.1.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-sll385.LinkedList">
+<span id="sll385-api-reference"></span><h1><code class="docutils literal notranslate"><span class="pre">sll385</span></code> API reference<a class="headerlink" href="#module-sll385.LinkedList" title="Permalink to this heading"></a></h1>
+<p>Classes that implement a linked list and its nodes. A function is also provided to convert a Python list to a linked list.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="sll385.LinkedList.LinkedList">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sll385.LinkedList.</span></span><span class="sig-name descname"><span class="pre">LinkedList</span></span><a class="reference internal" href="_modules/sll385/LinkedList.html#LinkedList"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sll385.LinkedList.LinkedList" title="Permalink to this definition"></a></dt>
+<dd><p>Singly Linked List.</p>
+<p>Creates a Singly Linked List.</p>
+<section id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this heading"></a></h2>
+<dl class="simple">
+<dt>head<span class="classifier">Node</span></dt><dd><p>The first node in the list.</p>
+</dd>
+<dt>size<span class="classifier">Node</span></dt><dd><p>The numerical size of the list.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="sll385.LinkedList.LinkedList.addAtIndex">
+<span class="sig-name descname"><span class="pre">addAtIndex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sll385/LinkedList.html#LinkedList.addAtIndex"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sll385.LinkedList.LinkedList.addAtIndex" title="Permalink to this definition"></a></dt>
+<dd><p>Add a value at a specific index.</p>
+<section id="parameters">
+<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>index</dt><dd><p>The index where to add value.</p>
+</dd>
+<dt>val</dt><dd><p>The value to add to the list.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sll385.LinkedList.LinkedList.addToHead">
+<span class="sig-name descname"><span class="pre">addToHead</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sll385/LinkedList.html#LinkedList.addToHead"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sll385.LinkedList.LinkedList.addToHead" title="Permalink to this definition"></a></dt>
+<dd><p>Add a value at the head.</p>
+<section id="id1">
+<h3>Parameters<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>val</dt><dd><p>The value to add at the head.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sll385.LinkedList.LinkedList.addToTail">
+<span class="sig-name descname"><span class="pre">addToTail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sll385/LinkedList.html#LinkedList.addToTail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sll385.LinkedList.LinkedList.addToTail" title="Permalink to this definition"></a></dt>
+<dd><p>Add a value to the tail.</p>
+<section id="id2">
+<h3>Parameters<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>val</dt><dd><p>The value to add at the tail.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sll385.LinkedList.LinkedList.deleteIndex">
+<span class="sig-name descname"><span class="pre">deleteIndex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sll385/LinkedList.html#LinkedList.deleteIndex"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sll385.LinkedList.LinkedList.deleteIndex" title="Permalink to this definition"></a></dt>
+<dd><p>Delete a value at a specific index.</p>
+<section id="id3">
+<h3>Parameters<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>index</dt><dd><p>The index of the value to delete.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sll385.LinkedList.LinkedList.getVal">
+<span class="sig-name descname"><span class="pre">getVal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sll385/LinkedList.html#LinkedList.getVal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sll385.LinkedList.LinkedList.getVal" title="Permalink to this definition"></a></dt>
+<dd><p>Gets the value at an index.</p>
+<section id="id4">
+<h3>Parameters<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>index</dt><dd><p>The index of the value to get.</p>
+</dd>
+</dl>
+</section>
+<section id="returns">
+<h3>Returns<a class="headerlink" href="#returns" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>int/str</dt><dd><p>Returns the value of the node.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sll385.LinkedList.LinkedList.printList">
+<span class="sig-name descname"><span class="pre">printList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sll385/LinkedList.html#LinkedList.printList"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sll385.LinkedList.LinkedList.printList" title="Permalink to this definition"></a></dt>
+<dd><p>Print all the elements in the linked list.</p>
+</dd></dl>
+
+</section>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sll385.LinkedList.Node">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sll385.LinkedList.</span></span><span class="sig-name descname"><span class="pre">Node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sll385/LinkedList.html#Node"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sll385.LinkedList.Node" title="Permalink to this definition"></a></dt>
+<dd><p>Linked List Node.</p>
+<p>Creates a Node.</p>
+<section id="id5">
+<h2>Parameters<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
+<dl class="simple">
+<dt>val<span class="classifier">int/str</span></dt><dd><p>The value of the node.</p>
+</dd>
+</dl>
+</section>
+<section id="id6">
+<h2>Attributes<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
+<dl class="simple">
+<dt>val<span class="classifier">str</span></dt><dd><p>The value of the node.</p>
+</dd>
+<dt>next<span class="classifier">Node</span></dt><dd><p>The next sequential node.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="sll385.LinkedList.convert_to_linked_list">
+<span class="sig-prename descclassname"><span class="pre">sll385.LinkedList.</span></span><span class="sig-name descname"><span class="pre">convert_to_linked_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arr</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sll385/LinkedList.html#convert_to_linked_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sll385.LinkedList.convert_to_linked_list" title="Permalink to this definition"></a></dt>
+<dd><p>Converts a Python list to a linked list.</p>
+<section id="id7">
+<h2>Parameters<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
+<dl class="simple">
+<dt>arr<span class="classifier">array</span></dt><dd><p>Python list.</p>
+</dd>
+</dl>
+</section>
+<section id="id8">
+<h2>Returns<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h2>
+<dl class="simple">
+<dt>LinkedList</dt><dd><p>Returns a Singly Linkedlist.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">sll385</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Tanner Oates.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/reference.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
