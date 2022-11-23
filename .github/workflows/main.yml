@@ -20,6 +20,8 @@ jobs:
         python-version: 3.9
     - name: Python Poetry Action
       uses: abatilo/actions-poetry@v2.1.6
+      with:
+        poetry-version: 1.2.2
     - name: install
       run: poetry install --with docs
     - name: Build documentation
