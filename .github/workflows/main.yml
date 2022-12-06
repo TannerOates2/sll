@@ -38,6 +38,3 @@ jobs:
       with:
         branch: gh-pages
         folder: gh-pages
-
-        #q: update poetry extra dependencies command
-        #a: poetry install --extras docs
